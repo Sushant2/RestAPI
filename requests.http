@@ -1,0 +1,47 @@
+@host = http://localhost:3000/
+
+GET http://localhost:3000/ HTTP/1.1
+
+###
+
+POST http://localhost:3000/products HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Sushant Gupta",
+    "price": 500
+}
+
+###
+
+POST http://localhost:3000/orders HTTP/1.1
+Content-Type: application/json
+
+{
+    "productId": "ek.jggeccec",
+    "quantity": 10
+}
+
+###
+
+POST http://localhost:3000/products HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Anuj Gupta",
+    "price": 800
+}
+
+
+###
+
+GET http://localhost:3000/products/5f4380aa498300397ce7ba90 HTTP/1.1
+
+###
+
+GET http://localhost:3000/products HTTP/1.1
+
+###
+
+POST http://localhost:3000/orders HTTP/1.1
+Content-Type: application/json
